@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+<head>
+<link rel="icon" href="favicon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>INX Foundation</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="password-gate" style="margin-top:180px; display:flex; justify-content:center;">
+  <div style="
+    width:360px;
+    border:2px solid #000;
+    border-radius:12px;
+    padding:24px;
+    background:#fff;
+    text-align:center;
+  ">
+    <h2 style="color:#1E5BFF;">INX – Internal Access</h2>
+    <p>This document is shared only with contributors and mentors.</p>
+
+    <input
+      type="password"
+      id="password-input"
+      placeholder="Enter access password"
+      autofocus
+      onkeydown="if(event.key==='Enter') checkPassword();"
+      style="
+        width:90%;
+        height:44px;
+        margin-bottom:12px;
+        padding:0 12px;
+        border-radius:8px;
+        border:1px solid #000;
+        caret-color:#000;
+      "
+    />
+
+    <button
+      onclick="checkPassword()"
+      style="
+        width:60%;
+        height:44px;
+        border-radius:8px;
+        border:1px solid #000;
+        background:#fff;
+        font-weight:600;
+        cursor:pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      "
+    >
+      Access Document
+    </button>
+    <p id="error-msg" style="color:red; margin-top:12px; display:none;">
+      Incorrect password. Please try again.
+    </p>
+  </div>
+</div>
+
+<div id="loading-screen" style="
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+  background:#FFFFFF;
+  color:#000000;
+  font-family:Arial, sans-serif;
+  font-size:18px;
+  z-index:9999;
+  align-items:center;
+  justify-content:center;
+">
+  Please wait …
+</div>
+
+<div id="protected-content" style="display:none;">
+  <main class="container">
+    <header>
+      <h1 style="text-align: center;">INX Technologies - Foundation Document (2025)</h1>
+      <div class="meta">Prepared by: <strong>Shreyash Sinha</strong> (Founder) </div>
+<div class="meta"> Project Start: After 12th Board Exams </div>
+    </header>
+
+    <section class="section">
+      <h2>1. Vision Statement</h2>
+      <p><strong>INX Technologies</strong> aims to build <strong>INX.OS</strong> - India's Own Operating System not based on AOSP it will be fully independent, created for speed, privacy, independence, and long-term national innovation. Over the next few decades, INX will expand from software into hardware, and eventually into electric vehicles and mobility ecosystems.</p>
+    </section>
+
+    <section class="section">
+      <h2>2. Purpose of This Document</h2>
+      <p>This document is the official starting point of INX.</p>
+<p> It defines: </p>
+      <ul>
+        <li>What INX will become</li>
+        <li>What the first version (INX Alpha) must achieve</li>
+        <li>What I need to learn before starting</li>
+        <li>Roadmap for the next 10 years</li>
+        <li>Rules to avoid failure</li>
+        <li>Identity and mission clarity</li>
+      </ul>
+      <p>This document will be updated as INX evolves.</p>
+    </section>
+
+    <section class="section">
+      <h2>3. Mission of INX</h2>
+      <p>Build a fully Indian technology ecosystem that combines:</p>
+      <ul>
+        <li>A modern, high-performance operating system</li>
+        <li>A secure and private mobile experience</li>
+        <li>Future INX devices (phones, wearables, EVs)</li>
+        <li>Homegrown technology that reduces dependence on foreign systems</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>4. 10-Year High-Level Roadmap (2026 to 2036)</h2>
+
+      <h3 style="margin:10px 0 6px 0;color:#0b3a8b;font-size:14px">Stage 1: Learning &amp; Prototype (2026 to 2028)</h3>
+      <ul>
+        <li>Complete boards</li>
+        <li>Learn software engineering basics: operating system fundamentals, computer science basics, UI/UX</li>
+        <li>Build INX Alpha Launcher (concept demo)</li>
+        <li>Grow brand: X, Instagram, LinkedIn, YouTube, Facebook, Github, LinkedIn</li>
+        <li>Prepare team recruitment strategy</li>
+        <li>Build first automation-based income source</li>
+        <li>Register INX Technologies at 18</li>
+      </ul>
+
+      <h3 style="margin:10px 0 6px 0;color:#0b3a8b;font-size:14px">Stage 2: INX.OS Development (2028 to 2031)</h3>
+      <ul>
+        <li>Build a small developer team</li>
+        <li>Create INX Kernel strategy (Android-based to start)</li>
+        <li>Develop INX Alpha ---> Beta ---> Public Preview</li>
+        <li>Device partners: Lava, Jio, Nokia-type partners</li>
+        <li>Launch INX Developer Program</li>
+        <li>Push updates and build trust</li>
+      </ul>
+
+      <h3 style="margin:10px 0 6px 0;color:#0b3a8b;font-size:14px">Stage 3: INX Hardware &amp; Devices (2031 to 2034)</h3>
+      <ul>
+        <li>INX Phone (INX One)</li>
+        <li>INX Wear</li>
+        <li>INX Secure Cloud</li>
+        <li>Begin EV research (INX Auto Division)</li>
+      </ul>
+
+      <h3 style="margin:10px 0 6px 0;color:#0b3a8b;font-size:14px">Stage 4: EV + Mobility Ecosystem (2034 to 2036)</h3>
+      <ul>
+        <li>INX E-car Concept (Model x.I)</li>
+        <li>INX OS for Vehicles</li>
+        <li>Secure AI for mobility</li>
+        <li>India rollout and global expansion</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>5. Learning Path (Must-Learn Before Building Team)</h2>
+      <div class="two-col">
+        <div>
+          <h3 style="margin:6px 0;color:#0b3a8b;font-size:14px">Technical</h3>
+          <ul>
+            <li>Operating system basics</li>
+            <li>Android framework (for initial compatibility layer)</li>
+            <li>UI/UX design</li>
+            <li>GitHub + version control</li>
+            <li>n8n automation (to automate INX workflows)</li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="margin:6px 0;color:#0b3a8b;font-size:14px">Business</h3>
+          <ul>
+            <li>Leadership</li>
+            <li>Decision-making</li>
+            <li>Hiring &amp; team management</li>
+            <li>Startup finance basics</li>
+            <li>Product roadmap design</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>6. Failure Resistance Strategy</h2>
+      <h3 style="margin:8px 0 6px 0;color:#0b3a8b;font-size:14px">To prevent early collapse </h3>
+      <h3 style="margin:8px 0 6px 0;color:#0b3a8b;font-size:14px">Avoid</h3>
+      <ul>
+        <li>Taking shortcuts</li>
+        <li>Building everything alone</li>
+        <li>Depending on one income source</li>
+        <li>Trying to beat Android on day one</li>
+        <li>Over-hiring without money</li>
+        <li>Ignoring long-term execution</li>
+      </ul>
+
+      <h3 style="margin:8px 0 6px 0;color:#0b3a8b;font-size:14px">Do</h3>
+      <ul>
+        <li>Build prototype first</li>
+        <li>Create audience early</li>
+        <li>Learn consistently</li>
+        <li>Keep costs near zero</li>
+        <li>Build automations for stable income</li>
+        <li>Create partnerships, not competition</li>
+        <li>Build INX step by step</li>
+        <li>Maintain founder discipline</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>7. Early Risks to Watch</h2>
+      <ul>
+        <li>Burnout</li>
+        <li>No income ---> no sustainability</li>
+        <li>No team ---> no real OS</li>
+        <li>Wrong expectations ---> frustration</li>
+        <li>Spending early ---> running out of money</li>
+        <li>Poor technical foundation ---> multi-year delay</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>8. Why India Needs INX</h2>
+      <ul>
+        <li>Rising need for data privacy</li>
+        <li>Independency from any foreign Operating System (Android or iOS)</li>
+        <li>National security</li>
+        <li>Economic independence</li>
+        <li>Growing digital population</li>
+        <li>Government interest in indigenous tech</li>
+        <li>Large Indian brands may want a homegrown alternative</li>
+      </ul>
+      <p><em>Note:</em> BharOS is enterprise-focused, not consumer-focused the public market is open. </p>
+    </section>
+
+    <section class="section">
+      <h2>9. Why Indian Companies May Support INX</h2>
+      <p><strong>Strong reason:</strong> Indian OEMs may seek alternatives to reduce reliance on Google licensing and get more customization freedom. INX offers:</p>
+      <ul>
+        <li>A low-cost, Indian alternative</li>
+        <li>Privacy-focused marketing angle</li>
+        <li>Faster update cycle</li>
+        <li>Full customization freedom</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>10. INX Alpha Launcher - Core Concept</h2>
+      <p>The INX Launcher is the first visible product of INX. Goals:</p>
+      <ul>
+        <li>Show INX identity</li>
+        <li>Show INX design language</li>
+        <li>Demonstrate UI innovation</li>
+        <li>Build early interest and developer following</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>11. INX Identity Guidelines</h2>
+      <ul>
+        <li><strong>Name:</strong> INX Technologies</li>
+        <li><strong>First Project:</strong> INX.OS</li>
+        <li><strong>Design Language:</strong> Simple, futuristic, Indian minimalism</li>
+        <li><strong>Brand Values:</strong> Privacy, Speed, Pride, Crafted in India</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>12. The First Execution Rule</h2>
+<ul>
+      <li>INX begins after boards. </li>
+<li>Preparation begins now. </li>
+<li>No posting or major work until boards are done.</li>
+</ul>
+    </section>
+
+    <section class="section">
+      <h2>13. When I Turn 18</h2>
+      <ul>
+        <li>Register INX Technologies Pvt. Ltd.</li>
+        <li>Build a formal team</li>
+        <li>Create internships</li>
+        <li>Begin official development of INX Alpha</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>14. Next Step for Me Today</h2>
+      <p>Write this document as a HTML code and save it. </p>
+      <p>This becomes the official starting blueprint of INX.</p>
+    </section> 
+
+    <section class="section">
+      <h2>15. Contact</h2>
+      <p><a href="mailto:team.inxtechnologies@gmail.com">team.inxtechnologies@gmail.com</a></p>
+    </section>
+<section class="section">
+<h2> 16. Shreyash's Statement </h2>
+<p>I am currently in grade 12th and I am just beginning my journey. I have no prior knowledge in software, operating systems, hardware, automobiles or automation. I will be learning every skill step by step, consistently, and with full dedication.</p>
+<p>I would be grateful if any developers, engineers, or mentors from companies such as Zoho, Jio, Lava, Infosys, TCS, or any Indian tech organization are willing to guide me. Mentorship and learning will help me execute INX more intelligently in the future.</p>
+<p>I will also continue learning independently while preparing for the long-term execution of INX. This is the beginning of a 10-year mission, and I am ready to grow into it.</p>
+</section>
+<section class="section">
+<h2> 17. Official Social Handles</h2>
+<p>
+ <div class="social-links">
+        <a href="https://www.instagram.com/inxtechnologies" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+<a href="https://www.facebook.com/profile.php?id=61583543771896" target="_blank" aria-label="Facebook Page">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+<a href="https://www.youtube.com/@inxtechnologies" target="_blank" aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+ <a href="https://x.com/inxtechin" target="_blank" aria-label="X (Twitter)">
+            <i class="fa-brands fa-x-twitter"></i>
+        </a>
+<a href="https://github.com/inxtechnologies" target="_blank" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/inx-t-5b7029399" target="_blank" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+
+    </div></p>
+</section>
+    <footer>
+      <p><strong><u>FINAL NOTE</u></strong></p>
+      <p>INX is a 10-year mission. This document is step 1. Execution begins after Class 12 board examinations. </p>
+<p>Consistency wins!</p>
+<p style="text-align: right;">This document was written on 12th December 2025. </p>
+<p style="text-align: right;">This document was last updated on 19th December 2025.</p>
+<p style="text-align: right;">This document may be updated occasionally if further changes occur.</p>
+<p style="text-align: center;"><b>This is an internal foundation document hosted on a personal server for discussion with contributors and mentors only. Not for public access.</b></p>
+<p style="text-align: center;">Established in India </p>
+
+<p  style="text-align: center;">--------------------------------------------------------------------------</p>
+      <p style="text-align: center;"> ---</p>
+      <p style="text-align: center;"><b>All rights reserved © INX Technologies Pvt. Ltd.<sup style="font-size: 0.6em;">TM</sup> </b></p>
+    </footer>
+  </main>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
