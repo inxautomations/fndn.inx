@@ -10,7 +10,7 @@
     e.preventDefault();
   });
 
-const PASSWORD = "inx";
+const PASSWORD = "inx.intt@contr";
 
 function checkPassword() {
   const input = document.getElementById("password-input").value;
